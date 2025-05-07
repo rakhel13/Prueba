@@ -21,6 +21,10 @@
 
   <link rel="stylesheet" href="css/style.css">
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -39,25 +43,25 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
-          <div class="logo">
-            <div class="site-logo">
-              <a href="index.html" class="js-logo-clone"><strong class="text-primary">La </strong>Farma</a>
-            </div>
-          </div>
-          <div class="main-nav d-none d-lg-block">
-            <nav class="site-navigation text-right text-md-center" role="navigation">
-              <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="shop.html">Productos</a></li>
-                <li class="active"><a href="about.html">Acerca de</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-              </ul>
-            </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><strong class="text-primary">La </strong>Farma</a>
+      
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse justify-content-end" id="mainNav"> 
+            <ul class="navbar-nav">
+              <li class="nav-item mr-4"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item mr-4"><a class="nav-link" href="shop.html">Productos</a></li>
+              <li class="nav-item mr-4 active"><a class="nav-link" href="about.html">Nosotros</a></li>
+              <li class="nav-item mr-4"><a class="nav-link" href="about.html">Laboratorio</a></li>
+              <li class="nav-item "><a class="nav-link" href="contact.html">Contacto</a></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
     </div>
 
     <div class="site-blocks-cover overlay" style="background-image: url('images/hero_bg_2.jpg');">
@@ -273,5 +277,10 @@
   <script src="js/main.js"></script>
 
 </body>
+
+<style>.nav-item.active .nav-link {
+  color: #212529; /* un tono oscuro, puedes elegir otro */
+  font-weight: 700; /* opcional: si quieres que sea en negrita */
+}</style>
 
 </html>
